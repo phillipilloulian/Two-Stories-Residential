@@ -9,28 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --ink: #111111;
-      --off-black: #1a1a1a;
-      --dark: #232323;
-      --charcoal: #2c2c2c;
-      --gray-700: #444;
-      --gray-500: #777;
-      --gray-400: #999;
-      --gray-300: #bbb;
-      --gray-200: #d5d5d5;
-      --gray-100: #ebebeb;
-      --light: #f6f5f3;
-      --cream: #faf9f7;
-      --white: #ffffff;
-      --accent: #8b7355;
-      --accent-light: #a08a6c;
-      --accent-faint: rgba(139, 115, 85, 0.08);
-      --serif: 'DM Serif Display', Georgia, serif;
-      --sans: 'DM Sans', -apple-system, sans-serif;
-      --radius: 4px;
-    }
-
+    :root { --ink: #111111; --off-black: #1a1a1a; --dark: #232323; --charcoal: #2c2c2c; --gray-700: #444; --gray-500: #777; --gray-400: #999; --gray-300: #bbb; --gray-200: #d5d5d5; --gray-100: #ebebeb; --light: #f6f5f3; --cream: #faf9f7; --white: #ffffff; --accent: #8b7355; --accent-light: #a08a6c; --accent-faint: rgba(139, 115, 85, 0.08); --serif: 'DM Serif Display', Georgia, serif; --sans: 'DM Sans', -apple-system, sans-serif; --radius: 4px; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; overflow-x: hidden; }
     body { font-family: var(--sans); color: var(--ink); background: var(--white); -webkit-font-smoothing: antialiased; overflow-x: hidden; font-size: 15px; line-height: 1.6; }
@@ -57,16 +36,11 @@
     .hero-actions { margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap; opacity: 0; transform: translateY(16px); animation: fadeIn 0.8s 0.9s ease forwards; }
     @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
     .btn { display: inline-flex; align-items: center; gap: 8px; font-family: var(--sans); font-size: 13px; font-weight: 500; letter-spacing: 0.5px; padding: 13px 28px; border-radius: var(--radius); text-decoration: none; transition: all 0.3s; cursor: pointer; border: none; }
-    .btn-primary { background: var(--white); color: var(--ink); }
-    .btn-primary:hover { background: var(--gray-100); }
-    .btn-secondary { background: rgba(255, 255, 255, 0.1); color: var(--white); border: 1px solid rgba(255, 255, 255, 0.2); }
-    .btn-secondary:hover { background: rgba(255, 255, 255, 0.18); }
-    .btn-dark { background: var(--ink); color: var(--white); }
-    .btn-dark:hover { background: var(--charcoal); }
-    .btn-outline { background: transparent; color: var(--ink); border: 1px solid var(--gray-200); }
-    .btn-outline:hover { border-color: var(--ink); }
-    .btn-accent { background: var(--accent); color: var(--white); }
-    .btn-accent:hover { background: var(--accent-light); }
+    .btn-primary { background: var(--white); color: var(--ink); } .btn-primary:hover { background: var(--gray-100); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.1); color: var(--white); border: 1px solid rgba(255, 255, 255, 0.2); } .btn-secondary:hover { background: rgba(255, 255, 255, 0.18); }
+    .btn-dark { background: var(--ink); color: var(--white); } .btn-dark:hover { background: var(--charcoal); }
+    .btn-outline { background: transparent; color: var(--ink); border: 1px solid var(--gray-200); } .btn-outline:hover { border-color: var(--ink); }
+    .btn-accent { background: var(--accent); color: var(--white); } .btn-accent:hover { background: var(--accent-light); }
     .stats-strip { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--off-black); }
     .stat-cell { padding: 36px 24px; text-align: center; border-right: 1px solid rgba(255, 255, 255, 0.05); }
     .stat-cell:last-child { border-right: none; }
@@ -167,15 +141,7 @@
 <body>
   <nav class="nav" id="navbar">
     <a href="/" class="nav-logo"><span class="nav-logo-mark">TSR</span><span class="nav-logo-text">Two Stories Residential</span></a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#process">How We Work</a></li>
-      <li><a href="#brokers">Brokers</a></li>
-      <li><a href="#sellers">Sell Your Property</a></li>
-      <li><a href="#homes">Our Homes</a></li>
-      <li><a href="#markets">Markets</a></li>
-      <li><a href="#contact" class="nav-cta-btn">Contact Us</a></li>
-    </ul>
+    <ul class="nav-links"><li><a href="#about">About</a></li><li><a href="#process">How We Work</a></li><li><a href="#brokers">Brokers</a></li><li><a href="#sellers">Sell Your Property</a></li><li><a href="#homes">Our Homes</a></li><li><a href="#markets">Markets</a></li><li><a href="#contact" class="nav-cta-btn">Contact Us</a></li></ul>
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
   <div class="mobile-menu" id="mobileMenu">
@@ -211,7 +177,7 @@
     <div class="about-grid">
       <div class="reveal">
         <p class="section-label">About TSR</p>
-        <h2 class="section-title">A Focused Homebuilder with a<br>Repeatable Model.</h2>
+        <h2 class="section-title">A Focused Homebuilder<br>with a Repeatable Model.</h2>
         <div class="about-text">
           <p><strong>Two Stories Residential</strong> is a Los Angeles–based homebuilder specializing in ground-up single-family construction on the Westside. We acquire flat teardown lots, demolish the existing structure, and build architecturally refined two-story homes designed for modern living.</p>
           <p>Our approach is built on a simple idea: eliminate complexity. We work exclusively in four neighborhoods we know block by block, use pre-engineered plan sets optimized for each lot, and maintain long-standing relationships with the same trades and consultants on every project. The result is a <strong>12–15 month cycle</strong> from acquisition to sale — with predictable quality at every stage.</p>
